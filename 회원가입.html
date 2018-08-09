@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<link type="text/css" rel="stylesheet" href="style.css">  <!--link를 통해서 css파일을 불러 들여옴-->
+<script src="쇼핑몰.js"></script>   <!--script를 이용하여 javascript와 연결-->
+<head>
+    <title>Dress Well에 오신것을 환영합니다.</title>
+</head>
+
+
+</script>
+<div id="Log">                                            <!--div에 form태그를 사용 로그인을 항시 쓸수있겟군 우측 위쪽에 놔둠-->
+  <form name="fo" method="get">
+    ID: <input type="text" size="10" value="">
+        PASSWORD: <input type="password" size="10" value="">
+        <input type="submit" value="sub" onclick="return query()"><br><br>
+    </form>
+</div>
+
+<a id="회원" href="회원가입.html">회원이 아니신가요?</a>    <!--a태그를 이용하여 회원이 아닐시 회원가입 창으로 넘어갈수있게 만듬-->
+
+<center style="padding:14px 120px;">                <!--center태그를 이용하여 중간 위치를 잡아줌 로고 사진-->
+<a href="쇼핑몰.html">                               
+<img src="magic.png" height="70px">                 <!--a와 img태그를 써서 다시 로고를 누를시 홈으로 돌아게끔 함-->
+</a>                      
+</center>
+<h3>Dress Well</h3>
+
+
+
+<body>
+<nav id="menubar">                                       <!--nav태그와 ul li태그를 활용하여 메뉴바를 생성-->
+ <ul>
+   <li><a href="쇼핑몰.html">홈</a></li>
+   <li><a href="베스트.html">베스트</a></li>
+   <li><a href="티셔츠.html">티셔츠</a></li>
+   <li><a href="아우터.html">아우터</a></li>
+   <li><a href="바지.html">바지</a></li>
+   <li><a href="모자.html">모자</a></li>
+   <li><a href="질문.html">Q&A</a></li>
+ </ul>
+ </nav>                                                   <!--여기까지는 모든 페이지가 공유-->
+
+
+
+<p style="text-align:center; color:blue">회원가입</p>     <!--여기서 부터 회원가입이라는것을 style로 표기-->
+
+<div style="margin: 20px 420px;">                        <!--div태그로 회원가인 form을 하나로 묶음-->
+
+<form name="fo" method="get">                            <!--form을 이용한 네임 및 메소드-->
+
+  <label><span>이 름 :  </span></label>                   <!--label태그를 이용하여 각 구역을 맡음(이름 구역)-->
+  <input type="text" size="10" value="">
+  <br><br>
+
+  <label style="text-align:center ">사용자 ID : <input type="text" size="10" value="">&nbsp<input type="submit" value="중복확인" onclick="return query()">                                                <!--중복확인 버튼과 이벤트 발생에 의한 출력-->
+  </label>
+ <span style="font-size:12px">  * 아이디는 최대 길이 10 </span>  
+    <br><br>
+
+  <label for="pass">비밀 번호 : </label>                    <!--label태그를 이용하여 각 구역을 맡음(비밀번호 구역)-->
+  <input id="pass" type="password" size="10" value="">
+  <br><span style="font-size:12px">  * 비밀번호 영문자포함 최대 길이 10 </span>
+    <br><br>
+
+  <label><span>비번 확인 : </span></label>                 <!--label태그를 이용하여 각 구역을 맡음(비밀번호 확인)-->
+  <input type="password" size="10" value="">
+  <br><br>
+
+  
+
+  <label><span>생년 월일 : </span></label>                <!--label태그를 이용하여 각 구역을 맡음(생년월일 구역)-->
+  <input type="date" value="">                           <!--input 타입을 date로 설정하여 날짜만을 입력 시킴 -->
+  <br><br>
+
+  <label>배송 주소지 : </label>                           <!--label태그를 이용하여 각 구역을 맡음(배송지 구역)-->
+  <input type="text"  size="50" value=""><br><span style="font-size:12px"> * 필수입력란</span>
+  <br><br>
+
+  <label>휴대 전화 : </label>                             <!--label태그를 이용하여 각 구역을 맡음(번호 구역)-->
+  <input type="text"  size="10" value=""><br><span style="font-size:12px"> * -빼고 입력</span>
+  <br><br>
+
+  <span style=>좋아하는 옷 스타일이 무엇입니까? (선택)</span><br> <!--질문 스타일 선택-->
+
+  <label>                                              <!--input을 라디오로 하여 3개의 스타일중 선택-->
+    <input type="radio" name="hobby" value"">
+    힙합
+  </label>
+  <label>
+    <input type="radio" name="hobby" value"">
+    댄디
+  </label>
+  <label>
+    <input type="radio" name="hobby" value"">
+    고딕
+  </label>
+  <br><br>
+
+  <label>간단히 자기소개좀 해주세요                   <!--자기소개를 위한 label-->
+   <textarea cols="50" rows="10"></textarea>
+  </label><br><br>
+
+  <label><input type="button" value="작성 완료" onclick="return query()"></a></label>  <!--작성완료버튼 이벤트 발생-->
+</div>
+</form>

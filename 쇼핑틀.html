@@ -1,0 +1,56 @@
+<!DOCTYPE html>                        <!--상품이 풀절이라는 것을 알려준는 html-->
+<html>
+<link type="text/css" rel="stylesheet" href="style.css">  <!--link를 통해서 css파일을 불러 들여옴-->
+<script src="쇼핑몰.js"></script>   <!--script를 이용하여 javascript와 연결-->
+<head>
+    <title>Dress Well에 오신것을 환영합니다.</title>
+</head>
+
+
+</script>
+<div id="Log">                                            <!--div에 form태그를 사용 로그인을 항시 쓸수있겟군 우측 위쪽에 놔둠-->
+  <form name="fo" method="get">
+    ID: <input type="text" size="10" value="">
+        PASSWORD: <input type="password" size="10" value="">
+        <input type="submit" value="sub" onclick="return query()"><br><br>
+    </form>
+</div>
+
+<a id="회원" href="회원가입.html">회원이 아니신가요?</a>    <!--a태그를 이용하여 회원이 아닐시 회원가입 창으로 넘어갈수있게 만듬-->
+
+<center style="padding:14px 120px;">                <!--center태그를 이용하여 중간 위치를 잡아줌 로고 사진-->
+<a href="쇼핑몰.html">                               
+<img src="magic.png" height="70px">                 <!--a와 img태그를 써서 다시 로고를 누를시 홈으로 돌아게끔 함-->
+</a>                      
+</center>
+<h3>Dress Well</h3>
+
+
+
+<body>
+<nav id="menubar">                                       <!--nav태그와 ul li태그를 활용하여 메뉴바를 생성-->
+ <ul>
+   <li><a href="쇼핑몰.html">홈</a></li>
+   <li><a href="베스트.html">베스트</a></li>
+   <li><a href="티셔츠.html">티셔츠</a></li>
+   <li><a href="아우터.html">아우터</a></li>
+   <li><a href="바지.html">바지</a></li>
+   <li><a href="모자.html">모자</a></li>
+   <li><a href="질문.html">Q&A</a></li>
+ </ul>
+ </nav>                                                   <!--여기까지는 모든 페이지가 공유-->
+
+
+<center style="margin: 50px 0px">                         <!--center태그로 위치를 잡아준 후 magin스타일을 이용하여 더욱 세세하게 위치를 잡음-->
+
+<span style="color:red">죄송합니다 해당 상품은 품절입니다 고객님ㅠㅠ</span><br><br><br> <!--span태그를 이용하여 색깔을 넣고 상품이 품절이라는것을 설명-->
+
+<div id="magic">  <!--magic이라는 id 값을 줌-->
+
+<img src="magic.png" height="100px"> <!--로고 이미지를 삽입 높이를 100px로 설정-->
+
+</div>
+
+</center>
+</body>
+</html>

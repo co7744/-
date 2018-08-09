@@ -1,0 +1,56 @@
+<!DOCTYPE html>                            <!--Q&A HTML입니다-->
+<html>
+<link type="text/css" rel="stylesheet" href="style.css">  <!--link를 통해서 css파일을 불러 들여옴-->
+<script src="쇼핑몰.js"></script>   <!--script를 이용하여 javascript와 연결-->
+<head>
+    <title>Dress Well에 오신것을 환영합니다.</title>
+</head>
+
+
+</script>
+<div id="Log">                                            <!--div에 form태그를 사용 로그인을 항시 쓸수있겟군 우측 위쪽에 놔둠-->
+  <form name="fo" method="get">
+    ID: <input type="text" size="10" value="">
+        PASSWORD: <input type="password" size="10" value="">
+        <input type="submit" value="sub" onclick="return query()"><br><br>
+    </form>
+</div>
+
+<a id="회원" href="회원가입.html">회원이 아니신가요?</a>    <!--a태그를 이용하여 회원이 아닐시 회원가입 창으로 넘어갈수있게 만듬-->
+
+<center style="padding:14px 120px;">                <!--center태그를 이용하여 중간 위치를 잡아줌 로고 사진-->
+<a href="쇼핑몰.html">                               
+<img src="magic.png" height="70px">                 <!--a와 img태그를 써서 다시 로고를 누를시 홈으로 돌아게끔 함-->
+</a>                      
+</center>
+<h3>Dress Well</h3>
+
+
+
+<body>
+<nav id="menubar">                                       <!--nav태그와 ul li태그를 활용하여 메뉴바를 생성-->
+ <ul>
+   <li><a href="쇼핑몰.html">홈</a></li>
+   <li><a href="베스트.html">베스트</a></li>
+   <li><a href="티셔츠.html">티셔츠</a></li>
+   <li><a href="아우터.html">아우터</a></li>
+   <li><a href="바지.html">바지</a></li>
+   <li><a href="모자.html">모자</a></li>
+   <li><a href="질문.html">Q&A</a></li>
+ </ul>
+ </nav>                                                   <!--여기까지는 모든 페이지가 공유-->
+
+
+ 
+
+ <p style="text-align: center; padding: 40px 0px">안녕하세요 고객문의 센터입니다.         <!--p에 스타일을 줘서 위치를 줌-->
+ 현재 Q&A는 테스트 페이지입니다. <br>우선 문의 사항은 아래에 있는 박스에 써서 제출해주세요 
+고객분들에게 더욱 좋은 서비스를 위해 더욱 증진하겠습니다.</p>
+
+<center>                                            <!--또한 센터태그를 활용 textarea에 문의사항을 작성하도록 함 또한 클릭시 오류발생 자바를 연동-->
+
+ <textarea cols="50" rows="15"></textarea>&nbsp<input type="button" value="제출" onclick="return warning()">
+
+</center>
+</body>
+</html>
